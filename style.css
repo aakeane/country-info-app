@@ -1,0 +1,35 @@
+body {
+  margin-top: 20px;
+}
+
+h1,
+h3 {
+  margin-top: 0;
+  padding: 0 5px;
+}
+
+.padding-y {
+  padding: 20px 0;
+}
+
+.margin-y {
+  margin: 25px 0;
+}
+
+.margin-y-sm {
+  margin: 10px;
+}
+
+.para {
+  font-weight: 700;
+}
+.para-fs {
+  font-size: 1.3rem;
+}
+
+.flag-img {
+  max-width: 70%;
+  height: auto;
+  padding: 20px;
+  margin-top: 10px;
+}

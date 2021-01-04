@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Country Info App</title>
+  </head>
+  <body class="pink lighten-3">
+    <!-- Input Card -->
+    <div class="container row center-align">
+      <div class="col s12 m10 offset-m1">
+        <div class="card horizontal z-depth-4">
+          <div class="card-stacked">
+            <div class="card-content">
+              <h1>Country Information</h1>
+              <h4>Enter a Country:</h4>
+              <div class="input-field col s6 offset-s3 left-align">
+                <form id="form">
+                  <input
+                    placeholder="Country"
+                    id="country"
+                    type="text"
+                    class="validate left-align"
+                    autofocus
+                  />
+                  <div class="margin-y center-align">
+                    <button
+                      id="submit-btn"
+                      type="submit"
+                      class="waves-effect waves-light btn blue"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- Output -->
+              <div class="container center-align" id="output-card">
+                <div class="col s12">
+                  <div class="card-panel z-depth-2 blue lighten-4">
+                    <div id="output"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./fetchRequest.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
